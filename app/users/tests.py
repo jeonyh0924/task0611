@@ -5,8 +5,6 @@ from rest_framework.test import APITestCase
 from model_bakery import baker
 
 
-class
-
 class UserTestCase(APITestCase):
     def setUp(self) -> None:
         self.users = baker.make('auth.User', _quantity=3)
