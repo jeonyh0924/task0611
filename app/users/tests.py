@@ -10,6 +10,7 @@ class UserTestCase(APITestCase):
         self.users = baker.make('auth.User', _quantity=3)
 
     def test_should_list(self):
+        self.client.force_authenticate(user=self.users[0])
         response = self.client.get('/api/users', format='json')
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -37,6 +38,7 @@ class UserTestCase(APITestCase):
 
     def test_should_get(self):
         user = self.users[0]
+        self.client.force_authenticate(user=user)
         response = self.client.get(f'/api/users/{user.id}')
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -50,6 +52,7 @@ class UserTestCase(APITestCase):
         prev_username = user.username
 
         data = {'username': "new"}
+        self.client.force_authenticate(user=user)
         response = self.client.put(f'/api/users/{user.id}', data=data)
 
         user_response = Munch(response.data)
@@ -62,10 +65,17 @@ class UserTestCase(APITestCase):
 
     def test_should_delete(self):
         user = baker.make('auth.User')
-        user = self.users[0]
+        self.client.force_authenticate(user=user)
+        # user = self.users[0]
 
         response = self.client.delete(f'/api/users/{user.id}')
 
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(User.objects.filter(pk=user.id).count(), 0)
         self.assertFalse(User.objects.filter(id=user.id).exists())
+
+    # def test(self):
+    #     self.client.force_authenticate(user=self.users[0])
+    #     self.client.get('/api/users/fastcampus')
+    #
+    #     self.fail()
