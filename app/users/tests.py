@@ -45,4 +45,29 @@ class UserTestCase(APITestCase):
         self.assertTrue(user_response.id)
         self.assertEqual(user_response.username, user.username)
 
+    def test_should_udpate(self):
+        user = self.users[0]
+        prev_username = user.username
+
+        data = {'username': "new"}
+        response = self.client.put(f'/api/users/{user.id}', data=data)
+
+        user_response = Munch(response.data)
+        self.assertTrue(user_response.id)
+
+        self.assertNotEqual(user_response.username, prev_username)
+        self.assertEqual(user_response.username, data['username'])
+
         # self.fail()
+
+    def test_should_delete(self):
+        user = self.users[0]
+        print('users', user)
+        response = self.client.delete(f'/api/users/{user.id}')
+        print('response id to un Munch!', response.data['id'])
+        user_response = Munch(response.data)
+        print(response.status_code)
+        print('response message', response.data)
+        print('response id', user_response.id)
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+
