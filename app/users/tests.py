@@ -55,6 +55,8 @@ class UserTestCase(APITestCase):
         self.client.force_authenticate(user=user)
         response = self.client.put(f'/api/users/{user.id}', data=data)
 
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
         user_response = Munch(response.data)
         self.assertTrue(user_response.id)
 
