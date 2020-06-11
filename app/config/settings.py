@@ -28,6 +28,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+
 INSTALLED_APPS = [
     'users',
     'cards',
@@ -39,7 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'rest_framework',
+    'django_extensions',
+
+    'rest_framework.authtoken',
+    'django_filters',
+
 ]
 
 MIDDLEWARE = [
@@ -121,10 +128,14 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
 
     'DEFAULT_PAGINATION_CLASS': 'core.paginations.IdPagination',
-    'PAGE_SIZE': 1,
+    # 'PAGE_SIZE': 1,
 
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
     'TEST_REQUEST_DEFAULT_FORMAT': 'json',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
 }

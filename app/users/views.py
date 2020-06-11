@@ -1,5 +1,6 @@
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
+
 from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
@@ -12,7 +13,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.viewsets import ModelViewSet
 
 from core.permissions import IsOwner
-from users.serializers import UserSerializer
+from users.serializers import UserSerializer, UserCreateSerializer
 
 
 class UserViewSetAPI(ModelViewSet):
@@ -30,10 +31,11 @@ class UserViewSetAPI(ModelViewSet):
             return [IsOwner()]
         return super().get_permissions()
 
-    # @action(detail=False)
-    # def fastcampus(self, request, *args, **kwargs):
-    #     print('FC!!')
-    #     return Response()
+    def get_serializer_class(self):
+        if self.action == 'create':
+            return UserCreateSerializer
+
+        return UserSerializer
 
 
 class AuthTokenAPIView(APIView):
@@ -57,10 +59,11 @@ class AuthTokenAPIView(APIView):
 
     def delete(self, request):
         user = request.user
-        token = Token.objects.get_obects_or_404(user=user)
+        token = Token.objects.get(user=user)
         token.delete()
         data = {
             "message": "token delete"
         }
-        return Response(data, status.HTTP_204_NO_CONTENT)
-
+        return Response(
+            data, status.HTTP_204_NO_CONTENT
+        )
