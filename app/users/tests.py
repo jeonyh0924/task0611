@@ -10,7 +10,9 @@ class UserTestCase(APITestCase):
         self.users = baker.make('auth.User', _quantity=3)
 
     def test_should_list(self):
+        # 전역에 인증된 유저만 접근하도록 하였기 떄문에
         self.client.force_authenticate(user=self.users[0])
+
         response = self.client.get('/api/users')
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
