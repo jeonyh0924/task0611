@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88db51e9-eaa0-4de3-8d52-346c4d5db1a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/cards/permissions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cards/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/cards/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/cards/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/app/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +19,7 @@
     <SUITE FILE_PATH="coverage/testcode0611$Test__users_tests_UserTestCase_test_should_get.coverage" NAME="Test: users.tests.UserTestCase.test_should_get Coverage Results" MODIFIED="1591857581594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/testcode0611$Test__users_tests.coverage" NAME="Test: users.tests Coverage Results" MODIFIED="1591858420835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/testcode0611$settings.coverage" NAME="settings Coverage Results" MODIFIED="1591859138575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/config" />
-    <SUITE FILE_PATH="coverage/testcode0611$django_test.coverage" NAME="django test Coverage Results" MODIFIED="1591875985464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/testcode0611$django_test.coverage" NAME="django test Coverage Results" MODIFIED="1591879049090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/testcode0611$permissions.coverage" NAME="permissions Coverage Results" MODIFIED="1591858732539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/core" />
     <SUITE FILE_PATH="coverage/testcode0611$Test__users_tests_UserTestCase_test_should_create.coverage" NAME="Test: users.tests.UserTestCase.test_should_create Coverage Results" MODIFIED="1591858025405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/testcode0611$Test__users_tests_UserTestCase_test_should_udpate.coverage" NAME="Test: users.tests.UserTestCase.test_should_udpate Coverage Results" MODIFIED="1591852636272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -49,25 +43,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="70" />
+          <entry key="py" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="70" />
+          <entry key="Python" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Django Console" value="4" />
-          <entry key="py" value="4119" />
+          <entry key="py" value="4222" />
           <entry key="py@testcode0611" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CommandLine" value="1" />
-          <entry key="Python" value="4123" />
+          <entry key="Python" value="4226" />
         </counts>
       </usages-collector>
     </session>
@@ -77,7 +71,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/cards/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -85,6 +79,52 @@
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/users/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="64" column="67" lean-forward="true" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+                <marker date="1591879049081" expanded="true" signature="240:299" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/users/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <marker date="1591877928075" expanded="true" signature="666:671" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/users/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
             </state>
           </provider>
         </entry>
@@ -158,15 +198,15 @@
         <option value="$PROJECT_DIR$/app/users/urls.py" />
         <option value="$PROJECT_DIR$/app/cards/permissions.py" />
         <option value="$PROJECT_DIR$/app/cards/serializers.py" />
-        <option value="$PROJECT_DIR$/app/users/tests.py" />
         <option value="$PROJECT_DIR$/app/cards/models.py" />
         <option value="$PROJECT_DIR$/app/users/models.py" />
-        <option value="$PROJECT_DIR$/app/users/serializers.py" />
         <option value="$PROJECT_DIR$/app/cards/views.py" />
         <option value="$PROJECT_DIR$/app/config/urls.py" />
         <option value="$PROJECT_DIR$/app/cards/urls.py" />
-        <option value="$PROJECT_DIR$/app/config/settings.py" />
         <option value="$PROJECT_DIR$/app/users/views.py" />
+        <option value="$PROJECT_DIR$/app/users/serializers.py" />
+        <option value="$PROJECT_DIR$/app/config/settings.py" />
+        <option value="$PROJECT_DIR$/app/users/tests.py" />
       </list>
     </option>
   </component>
@@ -269,7 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.django server">
+  <component name="RunManager" selected="Django tests.django test">
     <configuration name="Test: users.tests" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <module name="testcode0611" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -476,34 +516,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="django_test - 2020.06.11 at 16h 41m 43s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 25m 15s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 18h 57m 32s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 25m 41s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 40m 40s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 29m 23s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 41m 04s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 30m 51s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 44m 03s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 33m 39s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 45m 04s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 34m 56s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 45m 16s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 35m 11s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 45m 39s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 35m 19s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 46m 04s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 35m 35s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="django_test - 2020.06.11 at 20h 46m 28s.xml">
+    <history-entry file="django_test - 2020.06.11 at 21h 37m 30s.xml">
       <configuration name="django test" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
   </component>
@@ -512,7 +552,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" sideWeight="0.50121653" side_tool="true" weight="0.24959612" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -523,7 +563,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46321243" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4627737" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -540,6 +580,30 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/users/tests.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/users/tests.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/users/tests.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/core/models.py">
@@ -629,16 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/users/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/users/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -646,17 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="380" column="71" lean-forward="true" selection-start-line="380" selection-start-column="71" selection-end-line="381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/users/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <marker date="1591875679736" expanded="true" signature="240:299" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,23 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-          <folding>
-            <marker date="1591877928075" expanded="true" signature="666:671" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1573">
-          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/cards/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -760,6 +786,44 @@
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <marker date="1591877928075" expanded="true" signature="666:671" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/users/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="64" column="67" lean-forward="true" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1591879049081" expanded="true" signature="240:299" ph="..." />
           </folding>
         </state>
       </provider>

@@ -21,7 +21,7 @@ class UserTestCase(APITestCase):
             self.assertEqual(user_response.username, user.username)
 
     def test_should_create(self):
-        data = {'username': "abc"}
+        data = {'username': "abc", "password": "1111"}
         response = self.client.post('/api/users', data=data)
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
@@ -50,19 +50,19 @@ class UserTestCase(APITestCase):
 
     def test_should_update(self):
         user = self.users[0]
-        prev_username = user.username
+        prev_email = user.email
 
-        data = {'username': "new"}
+        data = {'email': "test@naver.com"}
         self.client.force_authenticate(user=user)
-        response = self.client.put(f'/api/users/{user.id}', data=data)
-
+        response = self.client.patch(f'/api/users/{user.id}', data=data)
+        print(response)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
         user_response = Munch(response.data)
         self.assertTrue(user_response.id)
 
-        self.assertNotEqual(user_response.username, prev_username)
-        self.assertEqual(user_response.username, data['username'])
+        self.assertNotEqual(user_response.email, prev_email)
+        # self.assertEqual(user_response.username, data['username'])
 
         # self.fail()
 

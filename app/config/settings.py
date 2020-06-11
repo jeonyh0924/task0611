@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
 
     'DEFAULT_PAGINATION_CLASS': 'core.paginations.IdPagination',
-    # 'PAGE_SIZE': 1,
+    'PAGE_SIZE': 1,
 
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
