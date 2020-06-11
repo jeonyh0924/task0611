@@ -45,7 +45,7 @@ class UserTestCase(APITestCase):
         self.assertTrue(user_response.id)
         self.assertEqual(user_response.username, user.username)
 
-    def test_should_udpate(self):
+    def test_should_update(self):
         user = self.users[0]
         prev_username = user.username
 
@@ -61,13 +61,11 @@ class UserTestCase(APITestCase):
         # self.fail()
 
     def test_should_delete(self):
+        user = baker.make('auth.User')
         user = self.users[0]
-        print('users', user)
-        response = self.client.delete(f'/api/users/{user.id}')
-        print('response id to un Munch!', response.data['id'])
-        user_response = Munch(response.data)
-        print(response.status_code)
-        print('response message', response.data)
-        print('response id', user_response.id)
-        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
+        response = self.client.delete(f'/api/users/{user.id}')
+
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+        self.assertEqual(User.objects.filter(pk=user.id).count(), 0)
+        self.assertFalse(User.objects.filter(id=user.id).exists())
