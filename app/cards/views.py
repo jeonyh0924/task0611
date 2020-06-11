@@ -11,11 +11,7 @@ from cards.serializers import CardSerializer
 
 
 class CardModelViewSetAPI(viewsets.ModelViewSet):
-    authentication_classes = [
-        TokenAuthentication,
-    ]
     permission_classes = [
-        IsAuthenticated,
         CardPermission,
     ]
     queryset = Card.objects.all()
